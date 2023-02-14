@@ -1,0 +1,30 @@
+{
+  "name": "testmodul",
+  "version": "1.0.0",
+  "description": "server test ",
+  "main": "demo.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/piatop/modulDemo.git"
+  },
+  "keywords": [
+    "express",
+    "demo",
+    "basic"
+  ],
+  "author": "pia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/piatop/modulDemo/issues"
+  },
+  "homepage": "https://github.com/piatop/modulDemo#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

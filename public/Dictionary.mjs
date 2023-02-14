@@ -1,6 +1,6 @@
 
-import en from './test/lan/en.json' assert { type: 'json' };
-import no from './test/lan/no.json' assert { type: 'json' };
+import en from '../test/lan/en.json' assert { type: 'json' };
+import no from '../test/lan/no.json' assert { type: 'json' };
 
 class Dictionary{
 
