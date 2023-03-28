@@ -10,28 +10,74 @@
 
 <body>
 
-    <button id="buttonEn" type="button">English</button>
-    <button id="buttonNo" type="button">Norsk</button>
+    <div id="cont">
 
+    </div>
 
-    <script>
+    <template id="homePage">
+        <button id="buttonEn" type="button">Engelsk</button>
+        <button id="buttonNo" type="button">Norsk</button>
 
-        let buttonEn = document.getElementById("buttonEn");
-        let buttonNo = document.getElementById("buttonNo");
+        <h1 id="header">Treningsplan</h1>
+        <h2 id="textbox">Velg språk</h2>
 
-        buttonEn.addEventListener('onclick', function(evt){
-            
-        })
+        <div class="float-container">
 
-        buttonEn.addEventListener('onclick', function(evt){
-            
-        })
+            <div id="float-child">
+                <h3 id="listExercise">List of excercises</h3>
+                <div id="container"></div>
+                <br>
+                <span id="addExercise">Legg til egen øvelse: </span>
+                <br>
+                <input id="input" name="egenØvelse" name="password" />
+                <button id="addExerciseBtn" type="button">Legg til</button>
+            </div>
 
-    </script>
+            <div id="float-child">
+                <h3 id="chosenEx">Chosen exercises</h3>
+            </div>
 
+        </div>
+        <a href="loginPage">Logg inn</a>
+        <br>
+    </template>
 
+    <template id="loginPage">
+        <span>Mail: </span>
+        <br>
+        <input id="mail" type="text" name="mail" required />
+        <br>
+        <span>Passord: </span>
+        <br>
+        <input id="password" type="password" name="password" required />
+        <br>
+        <br>
+        <button id="loginUserBtn" type="button">Logg inn</button>
+        <br>
+        <br>
+        <a href="registerPage">Har du ikke bruker? Lag bruker her</a>
+        <br>
+    </template>
 
+    <template id="registerPage">
+
+        <span>Mail: </span>
+        <br>
+        <input name="mail" id="mail" type="text" name="mail" required />
+        <br>
+        <span>Passord: </span>
+        <br>
+        <input name="password" id="password" type="password" name="password" required />
+        <br>
+        <br>
+        <button id="addUserBtn" type="button">Opprett bruker</button>
+    </template>
 
 </body>
+
+<script type="module" src="./Dictionary.mjs"></script>
+<script type="module" src="./index.mjs"></script>
+
+
 
 </html>
